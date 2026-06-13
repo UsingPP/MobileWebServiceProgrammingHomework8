@@ -1,9 +1,8 @@
-<!--Author : kiokahn-->
 {% load static %}
 <!DOCTYPE html>
-
 <html>
-    <head class="page-header">
+    <head>
+        <meta charset="utf-8">
         <title>Django Girls blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -11,6 +10,10 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
