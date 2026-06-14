@@ -9,6 +9,9 @@
             <h1>
                 <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
             </h1>
+            <p> {{ post.text | linebreaksbr }} </p>
+            <!--intruder image -->
+            <img src = "{{ post.Image.url }}" class= "rounded intruder-image-list" alt = "{{post.title}}"/>
         </div>
     {% endfor %}
 {% endblock %}
